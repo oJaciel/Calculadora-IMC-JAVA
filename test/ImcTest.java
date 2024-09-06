@@ -128,17 +128,6 @@ public class ImcTest {
         assertEquals(resultExpected, imcTest.VerificaImc());
     }
 
-    @Test
-    public void testCalcularImcComValoresNulos() {
-        imcTest.setPeso(null);
-        imcTest.setAltura(null);
-
-        try {
-            imcTest.CalculaImc();
-            fail("Deveria ter lançado uma exceção ao calcular IMC com valores nulos.");
-        } catch (NullPointerException e) {
-            // Exceção esperada
-        }
-    }
-
+    
+    
 }

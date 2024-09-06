@@ -8,6 +8,84 @@ public class TelaImc extends javax.swing.JFrame {
 
     java.util.List<Imc> lista = new ArrayList<>();
 
+    // Getters and Setters
+    public String getTxtCPF() {
+        return txtCPF.getText();
+    }
+
+    public void setTxtCPF(String cpf) {
+        this.txtCPF.setText(cpf);
+    }
+
+    public String getTxtNome() {
+        return txtNome.getText();
+    }
+
+    public void setTxtNome(String nome) {
+        this.txtNome.setText(nome);
+    }
+
+    public String getTxtPeso() {
+        return txtPeso.getText();
+    }
+
+    public void setTxtPeso(String peso) {
+        this.txtPeso.setText(peso);
+    }
+
+    public String getTxtAltura() {
+        return txtAltura.getText();
+    }
+
+    public void setTxtAltura(String altura) {
+        this.txtAltura.setText(altura);
+    }
+
+    // Getters and Setters para a lista
+    public java.util.List<Imc> getLista() {
+        return lista;
+    }
+
+    public void setLista(java.util.List<Imc> lista) {
+        this.lista = lista;
+    }
+
+// Getters e Setters para tableIMC
+    public javax.swing.JTable getTableIMC() {
+        return tableIMC;
+    }
+
+    public void setTableIMC(javax.swing.JTable tableIMC) {
+        this.tableIMC = tableIMC;
+    }
+
+// Getters e Setters para btnCalcular
+    public javax.swing.JButton getBtnCalcular() {
+        return btnCalcular;
+    }
+
+    public void setBtnCalcular(javax.swing.JButton btnCalcular) {
+        this.btnCalcular = btnCalcular;
+    }
+
+// Getters e Setters para btnAlterar
+    public javax.swing.JButton getBtnAlterar() {
+        return btnAlterar;
+    }
+
+    public void setBtnAlterar(javax.swing.JButton btnAlterar) {
+        this.btnAlterar = btnAlterar;
+    }
+
+// Getters e Setters para btnExcluir
+    public javax.swing.JButton getBtnExcluir() {
+        return btnExcluir;
+    }
+
+    public void setBtnExcluir(javax.swing.JButton btnExcluir) {
+        this.btnExcluir = btnExcluir;
+    }
+
     /**
      * Creates new form telaImc
      */
@@ -385,7 +463,7 @@ public class TelaImc extends javax.swing.JFrame {
     private void listarDados() {
         //Montar a matriz, de acordo com a quantidade de objetos na lista
         int qtdeObjetos = lista.size();
-        
+
         Integer totalTestes = 0;
 
         Object[][] dados = new Object[qtdeObjetos][6];
@@ -408,7 +486,7 @@ public class TelaImc extends javax.swing.JFrame {
                     "CPF", "Nome", "Peso", "Altura", "IMC", "Classificação"
                 }
         ));
-        
+
     }
 
 }
